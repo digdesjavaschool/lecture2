@@ -1,0 +1,20 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <groupId>com.digdes.2023.lecture2</groupId>
+        <artifactId>lecture2-business</artifactId>
+        <version>${revision}${changelist}</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>lecture2-repositories</artifactId>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.digdes.2023.lecture2</groupId>
+            <artifactId>lecture2-model</artifactId>
+            <version>${revision}${changelist}</version>
+        </dependency>
+    </dependencies>
+
+</project>

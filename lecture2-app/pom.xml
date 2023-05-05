@@ -1,0 +1,47 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <groupId>com.digdes.2023.lecture2</groupId>
+        <artifactId>lecture2-parent</artifactId>
+        <version>${revision}${changelist}</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>lecture2-app</artifactId>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.digdes.2023.lecture2</groupId>
+            <artifactId>lecture2-web</artifactId>
+            <version>${revision}${changelist}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.digdes.2023.lecture2</groupId>
+            <artifactId>lecture2-dto</artifactId>
+            <version>${revision}${changelist}</version>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <finalName>lecture2-sample</finalName>
+        <plugins>
+            <plugin>
+                <artifactId>maven-assembly-plugin</artifactId>
+                <configuration>
+                    <finalName>lecture2-sample-exec</finalName>
+                    <archive>
+                        <manifest>
+                            <mainClass>com.digdes.java2023.lecture2.app.MainApp</mainClass>
+                        </manifest>
+                    </archive>
+                    <descriptorRefs>
+                        <descriptorRef>jar-with-dependencies</descriptorRef>
+                    </descriptorRefs>
+                    <appendAssemblyId>false</appendAssemblyId>
+                </configuration>
+            </plugin>
+
+        </plugins>
+    </build>
+
+</project>
