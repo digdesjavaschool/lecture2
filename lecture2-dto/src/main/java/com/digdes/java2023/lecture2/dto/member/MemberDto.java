@@ -1,5 +1,4 @@
 package com.digdes.java2023.lecture2.dto.member;
-
 public class MemberDto {
 
     private Long id;

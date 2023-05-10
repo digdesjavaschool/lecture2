@@ -3,6 +3,7 @@ package com.digdes.java2023.lecture2.mapping;
 import com.digdes.java2023.lecture2.dto.member.CreateMemberDto;
 import com.digdes.java2023.lecture2.dto.member.MemberDto;
 import com.digdes.java2023.lecture2.model.Member;
+import lombok.With;
 
 import java.util.StringJoiner;
 
@@ -21,6 +22,7 @@ public class MemberMapper {
         StringJoiner displayNameJoiner = new StringJoiner(" ");
         if (entity.getLastName() != null)
             displayNameJoiner.add(entity.getLastName());
+
         if (entity.getFirstName() != null)
             displayNameJoiner.add(entity.getFirstName());
         dto.setDisplayName(displayNameJoiner.toString());

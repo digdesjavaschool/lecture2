@@ -2,6 +2,7 @@ package com.digdes.java2023.lecture2.repositories;
 
 import com.digdes.java2023.lecture2.model.Member;
 
+import java.io.FileNotFoundException;
 import java.util.List;
 
 public interface MemberRepository {

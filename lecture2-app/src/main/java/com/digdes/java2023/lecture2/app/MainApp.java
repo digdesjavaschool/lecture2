@@ -10,7 +10,7 @@ public class MainApp {
 
     private static final MemberController memberController = new MemberController();
 
-    public static void main(String... args){
+    public static void main(String... args) {
         CreateMemberDto newMember1 = new CreateMemberDto();
         newMember1.setFirstName("Иван");
         newMember1.setFirstName("Федорович");

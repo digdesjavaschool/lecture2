@@ -10,7 +10,15 @@
     <artifactId>lecture2-dto</artifactId>
 
     <dependencies>
-
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.digdes.2023.lecture2</groupId>
+            <artifactId>lecture2-common</artifactId>
+            <version>${revision}${changelist}</version>
+        </dependency>
     </dependencies>
 
 </project>
